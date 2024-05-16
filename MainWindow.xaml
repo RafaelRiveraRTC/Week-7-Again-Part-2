@@ -1,12 +1,36 @@
-﻿<Window x:Class="Week_7_Again_Part_2.MainWindow"
+﻿<Window  x:Class="Week_7_Again_Part_2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Week_7_Again_Part_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Canvas>
+        Title="MainWindow" Height="450" Width="890">
+    <Canvas  x:Name="canvasMain"
+        Background="#FFBB3C3C" Margin="1,1,3,0">
+
+        <local:NewControl 
+            x:Name="userControlNewControl"
+            />
+
+        <local:This_Is_My_Stuff
+            x:Name="RichardLikesTrains"
+            />
+
+        <TextBlock 
+            TextWrapping="Wrap" Text="TextBlock" Canvas.Left="336" Canvas.Top="189" HorizontalAlignment="Left" VerticalAlignment="Center" Width="151"/>
+
+
+        <Button x:Name="btnVisibility_Click"
+            Content="Button" Canvas.Left="709" Canvas.Top="26" Height="135" Width="151" Click="Button_Click"/>
+
+        <Button x:Name="TheCoolerButton"
+            Content="Button" Canvas.Left="4" Canvas.Top="4" Height="176" Width="221" Click="TheCoolerButton_Click"/>
+
+        <!--<local:NewControl
+            x:Name="userControlNewControl"
+            
+        </local:NewControl>-->
 
     </Canvas>
 </Window>
